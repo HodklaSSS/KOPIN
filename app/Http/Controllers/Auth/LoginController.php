@@ -22,14 +22,19 @@ class LoginController extends Controller
 
     public function home(Request $request)
     {
-        // $input = $request->all();
+        $input = $request->all();
 
-        // $this->validate($request, [
-        //     'email' => 'required|email',
-        //     'password' => 'required',
-        // ]);
+        $this->validate($request, [
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
 
-        if (Auth::attempt(array('email' => $input['email'], 'password' => $input['password']))) {
+        $data = [
+            'email' => $input['email'],
+            'password' => $input['password']
+        ];
+
+        if (Auth::attempt($data)) {
             if (Auth::user()->roles_id == 1) {
                 return redirect()->route('admin.home');
             } else {
