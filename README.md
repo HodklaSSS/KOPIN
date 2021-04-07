@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to Latihan Praktikum Pemrograman Web Lanjut 👋</h1>
+<h1 align="center">Latihan Praktikum Pemrograman Web Lanjut 👋</h1>
 <p>
 </p>
 
@@ -14,7 +14,7 @@ npm install
 composer install
 ```
 
-## Usage
+## Cara Pakai
 
 ```sh
 cp .env.example .env
@@ -25,13 +25,13 @@ Edit database difile .env
 php artisan migrate --seed
 ```
 
-## Run tests
+## Jalankan Server
 
 ```sh
 php artisan serve
 ```
 
-## Demo account
+## Demo Akun
 
 ```sh
 email: admin_a@mail.com
@@ -43,13 +43,9 @@ email: user_a@mail.com
 password: 123456
 ```
 
-## Author
+## Pembuat
 
 👤 **Labtif Unsur**
 
 -   Website: https://www.instagram.com/labtif.unsur/
 -   Github: [@labtif-unsur](https://github.com/labtif-unsur)
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
