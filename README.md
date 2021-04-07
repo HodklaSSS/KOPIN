@@ -19,6 +19,7 @@ composer install
 ```sh
 cp .env.example .env
 php artisan key:generate
+php artisan storage:link
 ```
 Edit database difile .env
 ```sh
