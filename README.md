@@ -20,7 +20,7 @@ composer install
 cp .env.example .env
 php artisan key:generate
 ```
-Edit .env lalu
+Edit database difile .env
 ```sh
 php artisan migrate --seed
 ```
