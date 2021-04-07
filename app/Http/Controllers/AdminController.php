@@ -23,8 +23,8 @@ class AdminController extends Controller
     public function books()
     {
         $user = Auth::user();
-        $book = Book::all();
+        $books = Book::all();
 
-        return view('book', compact('user', 'book'));
+        return view('book', compact('user', 'books'));
     }
 }
