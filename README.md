@@ -5,6 +5,11 @@
 ## Install
 
 ```sh
+git clone https://github.com/labtif-unsur/template-adminlte/ namakalian
+cd namakalian
+```
+Lalu install library yang dibutuhkan
+```sh
 npm install
 composer install
 ```
@@ -14,7 +19,10 @@ composer install
 ```sh
 cp .env.example .env
 php artisan key:generate
-php artisan migrate:refresh --seed
+```
+Edit .env lalu
+```sh
+php artisan migrate --seed
 ```
 
 ## Run tests
