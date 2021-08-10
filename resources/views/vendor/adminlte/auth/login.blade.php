@@ -4,6 +4,11 @@
     <link rel="stylesheet" href="{{ asset('vendor/icheck-bootstrap/icheck-bootstrap.min.css') }}">
 @stop
 
+@section("body_data")
+    style="background-image: url('{{ asset('assets/bg_login.jpeg') }}');
+    background-repeat: no-repeat; background-size: cover;"
+@endsection
+
 @php( $login_url = View::getSection('login_url') ?? config('adminlte.login_url', 'login') )
 @php( $register_url = View::getSection('register_url') ?? config('adminlte.register_url', 'register') )
 @php( $password_reset_url = View::getSection('password_reset_url') ?? config('adminlte.password_reset_url', 'password/reset') )
@@ -58,16 +63,10 @@
 
         {{-- Login field --}}
         <div class="row">
-            <div class="col-7">
-                <div class="icheck-primary">
-                    <input type="checkbox" name="remember" id="remember">
-                    <label for="remember">{{ __('adminlte::adminlte.remember_me') }}</label>
-                </div>
-            </div>
             <div class="col-5">
-                <button type=submit class="btn btn-block {{ config('adminlte.classes_auth_btn', 'btn-flat btn-primary') }}">
+                <button type=submit class="btn btn-block rounded-pill {{ config('adminlte.classes_auth_btn', 'btn-flat btn-primary') }}">
                     <span class="fas fa-sign-in-alt"></span>
-                    {{ __('adminlte::adminlte.sign_in') }}
+                    LOGIN
                 </button>
             </div>
         </div>
@@ -85,12 +84,12 @@
         </p>
     @endif
 
-    {{-- Register link --}}
+    {{-- Register link
     @if($register_url)
         <p class="my-0">
             <a href="{{ $register_url }}">
                 {{ __('adminlte::adminlte.register_a_new_membership') }}
             </a>
         </p>
-    @endif
+    @endif --}}
 @stop

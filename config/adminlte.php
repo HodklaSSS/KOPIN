@@ -230,88 +230,56 @@ return [
             'topnav' => true,
         ],
         [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
-        ],
-        [
-            'text' => 'book',
+            'text' => 'INFORMASI',
             'url'  => 'admin/books',
             'icon' => 'fas fa-fw fa-book',
             'can'  => 'isAdmin',
         ],
         [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
-            'label_color' => 'success',
-        ],
-        ['header' => 'account_settings'],
-        [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
-        ],
-        [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
-        [
-            'text'    => 'multilevel',
+            'text'    => 'ANGGOTA',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
                 [
-                    'text' => 'level_one',
+                    'text' => 'PROFILE',
+                    'url'  => 'anggota/profile/',
+                ],
+                [
+                    'text' => 'LOG BOOK',
                     'url'  => '#',
                 ],
                 [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
+                    'text' => 'PROSES PENGAJUAN',
                     'url'  => '#',
                 ],
             ],
         ],
-        ['header' => 'labels'],
         [
-            'text'       => 'important',
-            'icon_color' => 'red',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
-            'url'        => '#',
-        ],
+            'text'    => 'ADMIN',
+            'icon'    => 'fas fa-fw fa-share',
+            'can'     => 'isAdmin',
+            'submenu' => [
+                [
+                    'text' => 'SALDO',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'INPUT SALDO',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'PENGAJUAN',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'WAITING LIST',
+                    'url'  => '#',
+                ],
+                [
+                    'text' => 'PEMBAYARAN',
+                    'url'  => '#',
+                ],
+            ],
+        ]
     ],
 
     /*
